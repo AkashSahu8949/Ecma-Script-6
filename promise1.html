@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>promise </h1>
+    </body>
+    <script>
+        let data1 = fetch("https://dummyjson.com/products");
+        data1.then((item)=>{
+            return item.json()
+        }).then((newitem)=>{
+            console.log("output",newitem)
+        })
+    </script>
+</html>

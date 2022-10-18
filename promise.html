@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>promise </h1>
+        <script>
+            let a = undefined;
+          let promisedata = new Promise((resolved,reject)=>{
+            setTimeout(()=>{
+                a ="hello es6"
+                resolved("done");
+            },3000);
+          })  
+          promisedata.then(()=>{
+            alert(a);
+
+          })
+        </script>
+    </body>
+</html>

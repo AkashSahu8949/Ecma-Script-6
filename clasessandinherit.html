@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>ES6</h1>
+    <script>
+        class mobiledata{
+            getmobile(){
+               return "iphone";
+            }
+        }
+        class inhertanceexmaple extends mobiledata {
+            constructor()
+            {
+                super()
+            }
+            getFruits()
+        {
+            return "apple" 
+        }
+        getData()
+        {
+            return "integertype"
+        }
+        }
+        class citys extends inhertanceexmaple {
+            city1 = "Alwar";
+            city2 = "jaipur";
+
+            constructor() {
+                super()
+                console.log("constructor", this.city1, this.city2);
+            }
+            getcity() {
+                return this.city1
+            }
+        }
+        c1 = new citys;
+        f1 = new inhertanceexmaple;
+       m1 = new mobiledata;
+
+
+        console.log(c1.getmobile());
+
+    </script>
+</body>
+
+</html>
