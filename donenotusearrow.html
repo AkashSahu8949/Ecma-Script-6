@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" name="username" id="username" placeholder="Enter a username" />
+    <div id="greeting"></div>
+</body>
+<script>
+    const greeting = document.querySelector("#greeting");
+    const username = document.querySelector("#username");
+    username.addEventListener("keyup", () => {
+        greeting.textContent = "Hello " + this.value;
+    });
+</script>
+
+</html>
